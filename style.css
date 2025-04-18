@@ -5,8 +5,8 @@ body {
   box-sizing: border-box; /* 이게 뭐지? padding을 줬을 때 크기가 커지지 않게 하기 */
   font-family: sans-serif;
 }
-/* flex 컨테이너 */
-.flex-container {
+/* card 컨테이너 */
+.card-container {
   display: flex;
   flex-wrap: wrap; /* 줄바꿈 가능하게 */
   gap: 20px;
@@ -14,15 +14,17 @@ body {
 }
 
 /* 안에 들어가는 박스들 */
-.box {
-  flex: 1 1 200px; /* glow, shrink, basis */
-  min-width: 200px; /* 최소 너비 보장 */
-  height: 120px;
-  background-color: salmon;
-  color: white;
-  font-size: 24px;
+.card {
+  flex: 1 1 300px; /* glow, shrink, basis */
+  min-width: 250px; /*최소 너비 보장*/
+  background-color: #fff3bf;
+  font-size: 20px;
   display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  text-align: center;
 }
