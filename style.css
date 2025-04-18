@@ -7,13 +7,14 @@ body {
 }
 /* flex 컨테이너 */
 .flex-container {
-  display: flex; /* 정렬 준비 */
-  justify-content: center; /* center 가로 가운데 정렬 space-between 주축 정렬 */
-  align-items: center; /* center 세로 가운데 정렬 flex-start 교차축 정렬 */
-  height: 100vh; /* 세로 길이 100% */
-  gap: 20px; /* 새로운 용어 등장 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
   background-color: #f5f5f5;
-  flex-direction: column; /* cloumn box가 위 아래로 정렬 됨 row 가로로 정렬 됨 */
+  flex-direction: row; /* flex 가로 정렬 */
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
 }
 
 /* 안에 들어가는 박스들 */
