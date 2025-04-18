@@ -8,24 +8,33 @@ body {
 /* flex 컨테이너 */
 .flex-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row; /* flex 가로정렬 */
+  gap: 20px;
+  width: 100%;
   align-items: center;
   height: 100vh;
-  gap: 20px;
-  background-color: #f5f5f5;
-  flex-direction: row; /* flex 가로 정렬 */
-  flex-wrap: wrap; /* 줄 바꿈 허용 */
 }
 
 /* 안에 들어가는 박스들 */
 .box {
-  width: 100px; /* 가로 100픽셀 */
-  height: 100px; /* 세로 100픽셀 */
-  background-color: salmon; /* 배경색 연어색 */
-  color: white; /* 글꼴 흰색 */
-  font-size: 24px; /* 글꼴 크기 */
-  display: flex; /* 정렬 준비 */
-  justify-content: center; /* 가로 가운데 정렬 */
-  align-items: center; /* 세로 가운데 정렬 */
-  border-radius: 10px; /* 테두리 약간 둥글게 */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.box1 {
+  flex: 1;
+  background-color: #ff6b6b;
+}
+.box2 {
+  flex: 1;
+  background-color: #ffa94d;
+}
+.box3 {
+  flex: 0;
+  background-color: #74c0fc;
 }
