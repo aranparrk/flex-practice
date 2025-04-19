@@ -8,28 +8,21 @@ body {
 /* box 컨테이너 */
 .box-container {
   display: flex;
-  flex-direction: row;
   gap: 20px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 /* 안에 들어가는 박스들 */
 .box {
+  flex: 1 1 200px;
+  min-width: 150px;
   height: 100px;
+  background-color: salmon;
   color: white;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
   border-radius: 10px;
-}
-
-.box1 {
-  flex: 2;
-  background-color: #ff6b6b;
-}
-
-.box2 {
-  flex: 1;
-  background-color: #74c0fc;
 }
