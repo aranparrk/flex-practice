@@ -1,29 +1,27 @@
-.container {
+.card-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  width: 100%;
 }
-.box {
-  height: 100px;
-  color: white;
-  font-size: 18px;
+.card {
+  flex: 1 1 300px;
+  min-width: 150px;
+  height: 120px;
+  background-color: #f1f3f5;
+  color: #333;
   font-weight: bold;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
 }
-
-/* box1: flex 속성 */
-.box1 {
-  flex: 1;
-  background-color: #fff6b6;
-}
-
-/* box2: grow만 따로 */
-.box2 {
-  flex-grow: 1;
-  background-color: #74c0fc;
-  width: 200px; /* 기준 너비 있음 */
+@media (max-width: 600px) {
+  /* 최대크기가 600 일 때 */
+  .card {
+    /* class="card" CSS 적용 */
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
 }
