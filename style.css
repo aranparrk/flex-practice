@@ -1,28 +1,30 @@
-/* 전체 기본 스타일 */
-body {
-  margin: 0; /* 0 세팅하는 이유? 브라우저들이 기본적으로 body에 margin을 주기 때문에 처음에 여백이 생긴다, 모든 여백을 없애고 원하는 대로 만들기 위해서 = 초기화 */
-  padding: 0;
-  box-sizing: border-box; /* 이게 뭐지? padding을 줬을 때 크기가 커지지 않게 하기 */
-  font-family: sans-serif;
-}
-/* box 컨테이너 */
-.box-container {
+.card-container {
   display: flex;
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
   gap: 20px;
   padding: 20px;
-  flex-wrap: wrap;
 }
-
-/* 안에 들어가는 박스들 */
-.box {
-  flex: 1 1 200px;
-  min-width: 150px;
-  height: 100px;
-  background-color: salmon;
-  color: white;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card {
+  flex: 1 1 300px;
+  min-width: 250px;
+  background-color: #f1f3f5;
   border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+.card p {
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover; /* 새로운 용어 등장 -> 이미지를 박스에 딱 채우되, 잘릴 수 있어도 비율을 유지 */
 }
