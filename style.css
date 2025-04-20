@@ -5,12 +5,15 @@
   padding: 20px;
 }
 .card {
-  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 300px; /* 개념 정리 안 되었음 */
   min-width: 250px;
   background-color: #f1f3f5;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .card h2 {
   margin: 0 0 10px;
@@ -23,8 +26,23 @@
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 150px;
   border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover; /* 새로운 용어 등장 -> 이미지를 박스에 딱 채우되, 잘릴 수 있어도 비율을 유지 */
+}
+.card-btn {
+  margin-top: auto;
+  align-self: center; /* 새로운 용어 등장 */
+  padding: 10px 16px; /* 세로 x 가로 */
+  border: none; /* 테두리 없음 */
+  background-color: #339af0;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* 배경색 부드럽게? */
+}
+.card-btn:hover {
+  background-color: #1c7ed6;
 }
